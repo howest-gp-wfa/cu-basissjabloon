@@ -7,9 +7,9 @@ window.addEventListener("load", initialize);
 function initialize() {
 
   //Get elements in the DOM
-  inpName = document.getElementById("name-input");
+  inpName = document.getElementById("name");
   divResponse = document.getElementById("response");
-  btnConfirm = document.querySelector("#confirm-button");
+  btnConfirm = document.querySelector("#confirm");
 
   //Add eventlisteners to the elements we want
   btnConfirm.addEventListener("click", displayFeedback);
@@ -18,7 +18,7 @@ function initialize() {
 
 function displayFeedback() {
 
-  const name;
+  let name;
   name = inpName.value;
   console.log(name);
   
