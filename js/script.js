@@ -1,6 +1,6 @@
 "use strict";
 
-var inpName, btnConfirm, divResponse;
+let inpName, btnConfirm, divResponse;
 
 window.addEventListener("load", initialize); 
 
@@ -18,8 +18,7 @@ function initialize() {
 
 function displayFeedback() {
 
-  let name;
-  name = inpName.value;
+  const name = inpName.value;
   console.log(name);
   
   divResponse.className = "feedback";
